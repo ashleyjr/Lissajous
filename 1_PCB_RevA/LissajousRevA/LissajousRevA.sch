@@ -1819,13 +1819,13 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="V30" library="supply" deviceset="0V" device=""/>
 <part name="R508" library="passives" deviceset="RESISTOR" device="0603-RES" value="33K"/>
 <part name="R509" library="passives" deviceset="RESISTOR" device="0603-RES" value="33K"/>
-<part name="C506" library="passives" deviceset="CAP" device="0603-CAP" value="10nF"/>
 <part name="R510" library="passives" deviceset="RESISTOR" device="0603-RES" value="33K"/>
 <part name="V31" library="supply" deviceset="0V" device=""/>
 <part name="TP501" library="passives" deviceset="TEST-POINT" device="3"/>
 <part name="TP502" library="passives" deviceset="TEST-POINT" device="3"/>
 <part name="TP305" library="passives" deviceset="TEST-POINT" device="TP_15TH_THRU"/>
 <part name="TP304" library="passives" deviceset="TEST-POINT" device="TP_15TH_THRU"/>
+<part name="C506" library="passives" deviceset="CAP" device="0603-CAP" value="10nF"/>
 </parts>
 <sheets>
 <sheet>
@@ -1988,13 +1988,13 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </instance>
 <instance part="R508" gate="G$1" x="307.34" y="149.86"/>
 <instance part="R509" gate="G$1" x="322.58" y="149.86"/>
-<instance part="C506" gate="G$1" x="350.52" y="124.46" rot="R180"/>
 <instance part="R510" gate="G$1" x="350.52" y="109.22" rot="R90"/>
 <instance part="V31" gate="1" x="350.52" y="99.06"/>
 <instance part="TP501" gate="G$1" x="266.7" y="78.74" rot="R180"/>
 <instance part="TP502" gate="G$1" x="347.98" y="86.36"/>
 <instance part="TP305" gate="G$1" x="325.12" y="175.26" rot="R180"/>
 <instance part="TP304" gate="G$1" x="332.74" y="182.88"/>
+<instance part="C506" gate="G$1" x="350.52" y="121.92"/>
 </instances>
 <busses>
 </busses>
@@ -2843,26 +2843,23 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <segment>
 <pinref part="R509" gate="G$1" pin="2"/>
 <wire x1="350.52" y1="149.86" x2="327.66" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="C506" gate="G$1" pin="1"/>
+<wire x1="350.52" y1="127" x2="350.52" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="U201" gate="C" pin="OUT"/>
-<wire x1="347.98" y1="129.54" x2="350.52" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="350.52" y1="129.54" x2="350.52" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$35" class="0">
-<segment>
-<wire x1="350.52" y1="129.54" x2="350.52" y2="127" width="0.1524" layer="91"/>
-<pinref part="C506" gate="G$1" pin="2"/>
+<wire x1="347.98" y1="129.54" x2="350.52" y2="129.54" width="0.1524" layer="91"/>
+<junction x="350.52" y="129.54"/>
 </segment>
 </net>
 <net name="VIEW2" class="0">
 <segment>
 <pinref part="R510" gate="G$1" pin="2"/>
 <wire x1="350.52" y1="114.3" x2="350.52" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="C506" gate="G$1" pin="1"/>
 <wire x1="350.52" y1="116.84" x2="350.52" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="350.52" y1="116.84" x2="370.84" y2="116.84" width="0.1524" layer="91"/>
 <junction x="350.52" y="116.84"/>
 <label x="355.6" y="116.84" size="1.778" layer="95"/>
+<pinref part="C506" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="TP305" gate="G$1" pin="1"/>
