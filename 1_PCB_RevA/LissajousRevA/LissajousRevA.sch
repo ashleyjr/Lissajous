@@ -1730,9 +1730,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="V5" library="supply" deviceset="0V" device=""/>
 <part name="R106" library="passives" deviceset="RESISTOR" device="0603-RES" value="0R"/>
 <part name="R109" library="passives" deviceset="RESISTOR" device="0603-RES" value="0R"/>
-<part name="TP101" library="passives" deviceset="TEST-POINT" device="3"/>
-<part name="TP102" library="passives" deviceset="TEST-POINT" device="3"/>
-<part name="TP103" library="passives" deviceset="TEST-POINT" device="3"/>
 <part name="U201" library="LM348D" deviceset="LM348D" device=""/>
 <part name="R205" library="passives" deviceset="RESISTOR" device="0603-RES" value="33K"/>
 <part name="R204" library="passives" deviceset="RESISTOR" device="0603-RES" value="33K"/>
@@ -1755,9 +1752,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="V10" library="supply" deviceset="0V" device=""/>
 <part name="R206" library="passives" deviceset="RESISTOR" device="0603-RES" value="0R"/>
 <part name="R209" library="passives" deviceset="RESISTOR" device="0603-RES" value="0R"/>
-<part name="TP201" library="passives" deviceset="TEST-POINT" device="3"/>
-<part name="TP202" library="passives" deviceset="TEST-POINT" device="3"/>
-<part name="TP203" library="passives" deviceset="TEST-POINT" device="3"/>
 <part name="TP301" library="passives" deviceset="TEST-POINT" device="TP_15TH_THRU"/>
 <part name="TP303" library="passives" deviceset="TEST-POINT" device="TP_15TH_THRU"/>
 <part name="C301" library="passives" deviceset="CAP" device="0603-CAP" value="100nF"/>
@@ -1791,8 +1785,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="V21" library="supply" deviceset="0V" device=""/>
 <part name="R402" library="passives" deviceset="RESISTOR" device="0603-RES" value="0R"/>
 <part name="R403" library="passives" deviceset="RESISTOR" device="0603-RES" value="DNF"/>
-<part name="TP401" library="passives" deviceset="TEST-POINT" device="3"/>
-<part name="TP402" library="passives" deviceset="TEST-POINT" device="3"/>
 <part name="V22" library="supply" deviceset="V+" device=""/>
 <part name="V23" library="supply" deviceset="V-" device=""/>
 <part name="Q501" library="adafruit" deviceset="MOSFET-N" device="REFLOW"/>
@@ -1821,8 +1813,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="R509" library="passives" deviceset="RESISTOR" device="0603-RES" value="33K"/>
 <part name="R510" library="passives" deviceset="RESISTOR" device="0603-RES" value="33K"/>
 <part name="V31" library="supply" deviceset="0V" device=""/>
-<part name="TP501" library="passives" deviceset="TEST-POINT" device="3"/>
-<part name="TP502" library="passives" deviceset="TEST-POINT" device="3"/>
 <part name="TP305" library="passives" deviceset="TEST-POINT" device="TP_15TH_THRU"/>
 <part name="TP304" library="passives" deviceset="TEST-POINT" device="TP_15TH_THRU"/>
 <part name="C506" library="passives" deviceset="CAP" device="0603-CAP" value="10nF"/>
@@ -1889,9 +1879,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="V5" gate="1" x="20.32" y="182.88"/>
 <instance part="R106" gate="G$1" x="83.82" y="208.28" rot="R180"/>
 <instance part="R109" gate="G$1" x="170.18" y="208.28" rot="R180"/>
-<instance part="TP101" gate="G$1" x="81.28" y="233.68"/>
-<instance part="TP102" gate="G$1" x="167.64" y="233.68"/>
-<instance part="TP103" gate="G$1" x="256.54" y="233.68"/>
 <instance part="U201" gate="A" x="129.54" y="121.92"/>
 <instance part="U201" gate="B" x="218.44" y="127"/>
 <instance part="U201" gate="C" x="317.5" y="129.54"/>
@@ -1917,9 +1904,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="V10" gate="1" x="20.32" y="101.6"/>
 <instance part="R206" gate="G$1" x="83.82" y="127" rot="R180"/>
 <instance part="R209" gate="G$1" x="170.18" y="127" rot="R180"/>
-<instance part="TP201" gate="G$1" x="81.28" y="152.4"/>
-<instance part="TP202" gate="G$1" x="167.64" y="152.4"/>
-<instance part="TP203" gate="G$1" x="256.54" y="152.4"/>
 <instance part="TP301" gate="G$1" x="317.5" y="243.84"/>
 <instance part="TP303" gate="G$1" x="340.36" y="226.06"/>
 <instance part="C301" gate="G$1" x="302.26" y="205.74" rot="R180"/>
@@ -1956,8 +1940,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="V21" gate="1" x="154.94" y="25.4"/>
 <instance part="R402" gate="G$1" x="33.02" y="40.64" rot="R270"/>
 <instance part="R403" gate="G$1" x="48.26" y="38.1"/>
-<instance part="TP401" gate="G$1" x="101.6" y="76.2"/>
-<instance part="TP402" gate="G$1" x="30.48" y="20.32" rot="R180"/>
 <instance part="V22" gate="1" x="233.68" y="73.66"/>
 <instance part="V23" gate="1" x="233.68" y="43.18"/>
 <instance part="Q501" gate="G$1" x="213.36" y="43.18"/>
@@ -1990,8 +1972,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="R509" gate="G$1" x="322.58" y="149.86"/>
 <instance part="R510" gate="G$1" x="350.52" y="109.22" rot="R90"/>
 <instance part="V31" gate="1" x="350.52" y="99.06"/>
-<instance part="TP501" gate="G$1" x="266.7" y="78.74" rot="R180"/>
-<instance part="TP502" gate="G$1" x="347.98" y="86.36"/>
 <instance part="TP305" gate="G$1" x="325.12" y="175.26" rot="R180"/>
 <instance part="TP304" gate="G$1" x="332.74" y="182.88"/>
 <instance part="C506" gate="G$1" x="350.52" y="121.92"/>
@@ -2040,9 +2020,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <junction x="40.64" y="231.14"/>
 <wire x1="76.2" y1="233.68" x2="40.64" y2="233.68" width="0.1524" layer="91"/>
 <junction x="40.64" y="233.68"/>
-<pinref part="TP101" gate="G$1" pin="1"/>
-<wire x1="81.28" y1="233.68" x2="76.2" y2="233.68" width="0.1524" layer="91"/>
-<junction x="76.2" y="233.68"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -2326,9 +2303,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="R109" gate="G$1" pin="2"/>
 <wire x1="162.56" y1="208.28" x2="165.1" y2="208.28" width="0.1524" layer="91"/>
 <junction x="162.56" y="208.28"/>
-<pinref part="TP102" gate="G$1" pin="1"/>
-<wire x1="167.64" y1="233.68" x2="162.56" y2="233.68" width="0.1524" layer="91"/>
-<junction x="162.56" y="233.68"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -2403,9 +2377,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <junction x="40.64" y="149.86"/>
 <wire x1="76.2" y1="152.4" x2="40.64" y2="152.4" width="0.1524" layer="91"/>
 <junction x="40.64" y="152.4"/>
-<pinref part="TP201" gate="G$1" pin="1"/>
-<wire x1="81.28" y1="152.4" x2="76.2" y2="152.4" width="0.1524" layer="91"/>
-<junction x="76.2" y="152.4"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -2469,9 +2440,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="213.36" y1="132.08" x2="218.44" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="U201" gate="B" pin="OUT"/>
 <wire x1="248.92" y1="127" x2="251.46" y2="127" width="0.1524" layer="91"/>
-<pinref part="TP203" gate="G$1" pin="1"/>
-<wire x1="256.54" y1="152.4" x2="251.46" y2="152.4" width="0.1524" layer="91"/>
-<junction x="251.46" y="152.4"/>
 <wire x1="251.46" y1="127" x2="276.86" y2="127" width="0.1524" layer="91"/>
 <junction x="251.46" y="127"/>
 <label x="259.08" y="127" size="1.778" layer="95"/>
@@ -2503,9 +2471,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="R209" gate="G$1" pin="2"/>
 <wire x1="162.56" y1="127" x2="165.1" y2="127" width="0.1524" layer="91"/>
 <junction x="162.56" y="127"/>
-<pinref part="TP202" gate="G$1" pin="1"/>
-<wire x1="167.64" y1="152.4" x2="162.56" y2="152.4" width="0.1524" layer="91"/>
-<junction x="162.56" y="152.4"/>
 </segment>
 </net>
 <net name="N$22" class="0">
@@ -2592,9 +2557,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="213.36" y1="213.36" x2="218.44" y2="213.36" width="0.1524" layer="91"/>
 <pinref part="U101" gate="B" pin="OUT"/>
 <wire x1="248.92" y1="208.28" x2="251.46" y2="208.28" width="0.1524" layer="91"/>
-<pinref part="TP103" gate="G$1" pin="1"/>
-<wire x1="256.54" y1="233.68" x2="251.46" y2="233.68" width="0.1524" layer="91"/>
-<junction x="251.46" y="233.68"/>
 <wire x1="251.46" y1="208.28" x2="276.86" y2="208.28" width="0.1524" layer="91"/>
 <junction x="251.46" y="208.28"/>
 <label x="256.54" y="208.28" size="1.778" layer="95"/>
@@ -2648,9 +2610,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="50.8" y1="20.32" x2="165.1" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="20.32" x2="165.1" y2="53.34" width="0.1524" layer="91"/>
 <junction x="165.1" y="53.34"/>
-<pinref part="TP402" gate="G$1" pin="1"/>
-<wire x1="30.48" y1="20.32" x2="50.8" y2="20.32" width="0.1524" layer="91"/>
-<junction x="50.8" y="20.32"/>
 </segment>
 </net>
 <net name="N$30" class="0">
@@ -2661,9 +2620,8 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="R404" gate="G$1" pin="1"/>
 <wire x1="114.3" y1="53.34" x2="114.3" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="58.42" x2="114.3" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="68.58" x2="96.52" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="68.58" x2="91.44" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="C401" gate="G$1" pin="2"/>
-<wire x1="96.52" y1="68.58" x2="91.44" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="40.64" x2="114.3" y2="45.72" width="0.1524" layer="91"/>
 <junction x="114.3" y="53.34"/>
 <wire x1="114.3" y1="45.72" x2="114.3" y2="53.34" width="0.1524" layer="91"/>
@@ -2673,10 +2631,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="96.52" y1="45.72" x2="96.52" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="58.42" x2="114.3" y2="58.42" width="0.1524" layer="91"/>
 <junction x="114.3" y="58.42"/>
-<pinref part="TP401" gate="G$1" pin="1"/>
-<wire x1="101.6" y1="76.2" x2="96.52" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="76.2" x2="96.52" y2="68.58" width="0.1524" layer="91"/>
-<junction x="96.52" y="68.58"/>
 </segment>
 </net>
 <net name="N$34" class="0">
@@ -2751,9 +2705,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="264.16" y1="58.42" x2="271.78" y2="58.42" width="0.1524" layer="91"/>
 <junction x="264.16" y="58.42"/>
 <junction x="271.78" y="58.42"/>
-<pinref part="TP501" gate="G$1" pin="1"/>
-<wire x1="271.78" y1="78.74" x2="266.7" y2="78.74" width="0.1524" layer="91"/>
-<junction x="271.78" y="78.74"/>
 </segment>
 </net>
 <net name="N$36" class="0">
@@ -2808,9 +2759,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="299.72" y1="149.86" x2="302.26" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="299.72" y1="124.46" x2="299.72" y2="149.86" width="0.1524" layer="91"/>
 <junction x="299.72" y="124.46"/>
-<pinref part="TP502" gate="G$1" pin="1"/>
-<wire x1="347.98" y1="86.36" x2="337.82" y2="86.36" width="0.1524" layer="91"/>
-<junction x="337.82" y="86.36"/>
 </segment>
 </net>
 <net name="N$45" class="0">
