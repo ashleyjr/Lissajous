@@ -2781,17 +2781,14 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </net>
 <net name="N$39" class="0">
 <segment>
-<pinref part="U401" gate="D" pin="OUT"/>
-<wire x1="320.04" y1="58.42" x2="322.58" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="322.58" y1="58.42" x2="322.58" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="R506" gate="G$1" pin="2"/>
 <wire x1="322.58" y1="78.74" x2="299.72" y2="78.74" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$41" class="0">
-<segment>
+<pinref part="U401" gate="D" pin="OUT"/>
 <pinref part="C504" gate="G$1" pin="2"/>
-<wire x1="325.12" y1="58.42" x2="322.58" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="58.42" x2="322.58" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="322.58" y1="58.42" x2="325.12" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="322.58" y1="78.74" x2="322.58" y2="58.42" width="0.1524" layer="91"/>
+<junction x="322.58" y="58.42"/>
 </segment>
 </net>
 <net name="N$42" class="0">
