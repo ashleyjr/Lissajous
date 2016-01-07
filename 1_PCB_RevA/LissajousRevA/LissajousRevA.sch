@@ -772,22 +772,6 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <circle x="0" y="0" radius="0.40160625" width="0" layer="29"/>
 <circle x="2.54" y="0" radius="0.40160625" width="0" layer="29"/>
 </package>
-<package name="PAD.02X.02">
-<smd name="P$1" x="0" y="0" dx="0.508" dy="0.508" layer="1"/>
-</package>
-<package name="PAD.03X.03">
-<smd name="P$1" x="0" y="0" dx="0.762" dy="0.762" layer="1" roundness="100" cream="no"/>
-</package>
-<package name="PAD.03X.05">
-<smd name="P$1" x="0" y="0" dx="1.27" dy="1.27" layer="1" roundness="100" cream="no"/>
-</package>
-<package name="PAD.03X.04">
-<smd name="P$1" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100" cream="no"/>
-</package>
-<package name="TP_15TH">
-<pad name="P$1" x="0" y="0" drill="0.381" diameter="0.6096" stop="no"/>
-<circle x="0" y="0" radius="0.381" width="0" layer="30"/>
-</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -814,13 +798,6 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <rectangle x1="-2.032" y1="1.524" x2="2.032" y2="2.032" layer="94"/>
 <pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-</symbol>
-<symbol name="TEST-POINT">
-<wire x1="2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
-<wire x1="3.302" y1="0.762" x2="3.302" y2="-0.762" width="0.1524" layer="94" curve="180"/>
-<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;Name</text>
-<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;Value</text>
-<pin name="1" x="0" y="0" visible="off" length="point" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1087,54 +1064,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TEST-POINT" prefix="TP">
-<description>Bare copper test points for troubleshooting or ICT</description>
-<gates>
-<gate name="G$1" symbol="TEST-POINT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="2" package="PAD.02X.02">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="3" package="PAD.03X.03">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="3X5" package="PAD.03X.05">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="3X4" package="PAD.03X.04">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="TP_15TH_THRU" package="TP_15TH">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1697,6 +1626,40 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="pad">
+<packages>
+<package name="PAD">
+<pad name="P$2" x="0" y="0" drill="2" diameter="3.81"/>
+</package>
+</packages>
+<symbols>
+<symbol name="PAD">
+<pin name="P$1" x="0" y="0" length="middle"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="20.32" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="20.32" y1="-2.54" x2="20.32" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="20.32" y1="2.54" x2="5.08" y2="2.54" width="0.4064" layer="94"/>
+<text x="5.08" y="5.08" size="1.778" layer="95">&gt;Name</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PAD">
+<gates>
+<gate name="G$1" symbol="PAD" x="2.54" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="PAD">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1752,14 +1715,11 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="V10" library="supply" deviceset="0V" device=""/>
 <part name="R206" library="passives" deviceset="RESISTOR" device="0603-RES" value="0R"/>
 <part name="R209" library="passives" deviceset="RESISTOR" device="0603-RES" value="0R"/>
-<part name="TP301" library="passives" deviceset="TEST-POINT" device="TP_15TH_THRU"/>
-<part name="TP303" library="passives" deviceset="TEST-POINT" device="TP_15TH_THRU"/>
 <part name="C301" library="passives" deviceset="CAP" device="0603-CAP" value="100nF"/>
 <part name="C302" library="passives" deviceset="CAP" device="0603-CAP" value="100nF"/>
 <part name="V11" library="supply" deviceset="0V" device=""/>
 <part name="V12" library="supply" deviceset="V+" device=""/>
 <part name="V13" library="supply" deviceset="V-" device=""/>
-<part name="TP302" library="passives" deviceset="TEST-POINT" device="TP_15TH_THRU"/>
 <part name="C303" library="passives" deviceset="CAP" device="0603-CAP" value="100nF"/>
 <part name="C304" library="passives" deviceset="CAP" device="0603-CAP" value="100nF"/>
 <part name="V14" library="supply" deviceset="0V" device=""/>
@@ -1813,9 +1773,12 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="R509" library="passives" deviceset="RESISTOR" device="0603-RES" value="33K"/>
 <part name="R510" library="passives" deviceset="RESISTOR" device="0603-RES" value="33K"/>
 <part name="V31" library="supply" deviceset="0V" device=""/>
-<part name="TP305" library="passives" deviceset="TEST-POINT" device="TP_15TH_THRU"/>
-<part name="TP304" library="passives" deviceset="TEST-POINT" device="TP_15TH_THRU"/>
 <part name="C506" library="passives" deviceset="CAP" device="0603-CAP" value="10nF"/>
+<part name="TP301" library="pad" deviceset="PAD" device=""/>
+<part name="TP302" library="pad" deviceset="PAD" device=""/>
+<part name="TP303" library="pad" deviceset="PAD" device=""/>
+<part name="TO304" library="pad" deviceset="PAD" device=""/>
+<part name="TP305" library="pad" deviceset="PAD" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1904,14 +1867,11 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="V10" gate="1" x="20.32" y="101.6"/>
 <instance part="R206" gate="G$1" x="83.82" y="127" rot="R180"/>
 <instance part="R209" gate="G$1" x="170.18" y="127" rot="R180"/>
-<instance part="TP301" gate="G$1" x="317.5" y="243.84"/>
-<instance part="TP303" gate="G$1" x="340.36" y="226.06"/>
 <instance part="C301" gate="G$1" x="302.26" y="205.74" rot="R180"/>
 <instance part="C302" gate="G$1" x="314.96" y="205.74" rot="R180"/>
-<instance part="V11" gate="1" x="320.04" y="226.06" rot="R270"/>
-<instance part="V12" gate="1" x="297.18" y="243.84" rot="R90"/>
-<instance part="V13" gate="1" x="297.18" y="236.22" rot="R270"/>
-<instance part="TP302" gate="G$1" x="317.5" y="236.22"/>
+<instance part="V11" gate="1" x="322.58" y="223.52" rot="R270"/>
+<instance part="V12" gate="1" x="297.18" y="241.3" rot="R90"/>
+<instance part="V13" gate="1" x="297.18" y="231.14" rot="R270"/>
 <instance part="C303" gate="G$1" x="327.66" y="205.74" rot="R180"/>
 <instance part="C304" gate="G$1" x="340.36" y="205.74" rot="R180"/>
 <instance part="V14" gate="1" x="302.26" y="193.04"/>
@@ -1972,9 +1932,12 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="R509" gate="G$1" x="322.58" y="149.86"/>
 <instance part="R510" gate="G$1" x="350.52" y="109.22" rot="R90"/>
 <instance part="V31" gate="1" x="350.52" y="99.06"/>
-<instance part="TP305" gate="G$1" x="325.12" y="175.26" rot="R180"/>
-<instance part="TP304" gate="G$1" x="332.74" y="182.88"/>
 <instance part="C506" gate="G$1" x="350.52" y="121.92"/>
+<instance part="TP301" gate="G$1" x="317.5" y="241.3"/>
+<instance part="TP302" gate="G$1" x="317.5" y="231.14"/>
+<instance part="TP303" gate="G$1" x="342.9" y="223.52"/>
+<instance part="TO304" gate="G$1" x="332.74" y="182.88"/>
+<instance part="TP305" gate="G$1" x="325.12" y="175.26" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -2082,9 +2045,9 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="144.78" y1="114.3" x2="144.78" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="TP302" gate="G$1" pin="1"/>
-<wire x1="317.5" y1="236.22" x2="299.72" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="231.14" x2="299.72" y2="231.14" width="0.1524" layer="91"/>
 <pinref part="V13" gate="1" pin="V-"/>
+<pinref part="TP302" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
 <pinref part="V16" gate="1" pin="V-"/>
@@ -2118,9 +2081,9 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="144.78" y1="137.16" x2="144.78" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="TP301" gate="G$1" pin="1"/>
 <pinref part="V12" gate="1" pin="V+"/>
-<wire x1="317.5" y1="243.84" x2="299.72" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="241.3" x2="299.72" y2="241.3" width="0.1524" layer="91"/>
+<pinref part="TP301" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
 <pinref part="V17" gate="1" pin="V+"/>
@@ -2194,9 +2157,9 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <junction x="20.32" y="106.68"/>
 </segment>
 <segment>
-<pinref part="TP303" gate="G$1" pin="1"/>
-<wire x1="340.36" y1="226.06" x2="322.58" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="223.52" x2="325.12" y2="223.52" width="0.1524" layer="91"/>
 <pinref part="V11" gate="1" pin="0V"/>
+<pinref part="TP303" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
 <pinref part="V14" gate="1" pin="0V"/>
@@ -2534,9 +2497,9 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="60.96" y1="78.74" x2="71.12" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="TP304" gate="G$1" pin="1"/>
 <wire x1="332.74" y1="182.88" x2="314.96" y2="182.88" width="0.1524" layer="91"/>
 <label x="317.5" y="182.88" size="1.778" layer="95"/>
+<pinref part="TO304" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="SINEGEN1" class="0">
@@ -2807,9 +2770,9 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="C506" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="TP305" gate="G$1" pin="1"/>
 <wire x1="325.12" y1="175.26" x2="347.98" y2="175.26" width="0.1524" layer="91"/>
 <label x="337.82" y="175.26" size="1.778" layer="95"/>
+<pinref part="TP305" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$38" class="0">
