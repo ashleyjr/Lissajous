@@ -1,2 +1,22 @@
 - Relaxation oscillator works
 - LPF filter works
+
+
+- Power from +/- 12V
+	- U101 pin7 give a good sine wave
+		- 12V(pk -pk) @ 660Hz
+		- 11V(pk -pk) @ 710Hz
+		- 10V(pk -pk) @ 760Hz
+		- 8.8V(pk -pk) @ 830Hz
+		- 8V(pk -pk) @ 886Hz
+		- 6.8V(pk -pk) @ 971Hz
+		- 6V(pk -pk) @ 1037Hz
+		- 4.7V(pk -pk) @ 1167Hz
+		- 3.5V(pk -pk) @ 1330Hz
+		- 2.7V(pk -pk) @ 1500Hz
+		- 1.1V(pk -pk) @ 2033Hz
+		- 0.55V(pk -pk) @ 2576Hz
+		- 0.26V(pk -pk) @ 32130Hz
+	- Same output for U201 pin 7
+	- Need more turn on the pots
+	- Changed C401 to 22nF to smooth peak detector
