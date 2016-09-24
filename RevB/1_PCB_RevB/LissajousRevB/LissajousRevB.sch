@@ -1559,8 +1559,8 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="V4" library="supply" deviceset="V-" device=""/>
 <part name="V5" library="supply" deviceset="0V" device=""/>
 <part name="R15" library="passives" deviceset="RESISTOR" device="0603-RES" value="100K"/>
-<part name="C301" library="passives" deviceset="CAP" device="0603-CAP" value="100nF"/>
-<part name="C304" library="passives" deviceset="CAP" device="0603-CAP" value="100nF"/>
+<part name="C51" library="passives" deviceset="CAP" device="0603-CAP" value="100nF"/>
+<part name="C52" library="passives" deviceset="CAP" device="0603-CAP" value="100nF"/>
 <part name="V14" library="supply" deviceset="0V" device=""/>
 <part name="V15" library="supply" deviceset="0V" device=""/>
 <part name="V16" library="supply" deviceset="V-" device=""/>
@@ -1596,6 +1596,12 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="SINE" library="TestPads" deviceset="TESTPADS" device=""/>
 <part name="AMP" library="TestPads" deviceset="TESTPADS" device=""/>
 <part name="OUT" library="TestPads" deviceset="TESTPADS" device=""/>
+<part name="GND3" library="TestPads" deviceset="TESTPADS" device=""/>
+<part name="V10" library="supply" deviceset="0V" device=""/>
+<part name="GND4" library="TestPads" deviceset="TESTPADS" device=""/>
+<part name="V11" library="supply" deviceset="0V" device=""/>
+<part name="GND5" library="TestPads" deviceset="TESTPADS" device=""/>
+<part name="V12" library="supply" deviceset="0V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1650,8 +1656,8 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <attribute name="NAME" x="129.54" y="132.0546" size="1.778" layer="95"/>
 <attribute name="VALUE" x="129.54" y="129.54" size="1.778" layer="96"/>
 </instance>
-<instance part="C301" gate="G$1" x="190.5" y="233.68" rot="R180"/>
-<instance part="C304" gate="G$1" x="213.36" y="231.14"/>
+<instance part="C51" gate="G$1" x="190.5" y="233.68" rot="R180"/>
+<instance part="C52" gate="G$1" x="213.36" y="231.14"/>
 <instance part="V14" gate="1" x="190.5" y="223.52"/>
 <instance part="V15" gate="1" x="213.36" y="223.52"/>
 <instance part="V16" gate="1" x="213.36" y="241.3" rot="R180"/>
@@ -1750,6 +1756,18 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="OUT" gate="G$1" x="332.74" y="137.16" smashed="yes" rot="R180">
 <attribute name="NAME" x="347.98" y="137.16" size="1.27" layer="95"/>
 </instance>
+<instance part="GND3" gate="G$1" x="175.26" y="93.98" smashed="yes" rot="R270">
+<attribute name="NAME" x="180.34" y="99.06" size="1.27" layer="95"/>
+</instance>
+<instance part="V10" gate="1" x="175.26" y="88.9"/>
+<instance part="GND4" gate="G$1" x="208.28" y="93.98" smashed="yes" rot="R270">
+<attribute name="NAME" x="213.36" y="99.06" size="1.27" layer="95"/>
+</instance>
+<instance part="V11" gate="1" x="208.28" y="88.9"/>
+<instance part="GND5" gate="G$1" x="350.52" y="127" smashed="yes">
+<attribute name="NAME" x="330.2" y="127" size="1.27" layer="95"/>
+</instance>
+<instance part="V12" gate="1" x="353.06" y="121.92"/>
 </instances>
 <busses>
 </busses>
@@ -1761,7 +1779,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="198.12" y1="124.46" x2="198.12" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C304" gate="G$1" pin="1"/>
+<pinref part="C52" gate="G$1" pin="1"/>
 <pinref part="V16" gate="1" pin="V-"/>
 <wire x1="213.36" y1="238.76" x2="213.36" y2="236.22" width="0.1524" layer="91"/>
 </segment>
@@ -1784,7 +1802,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </segment>
 <segment>
 <pinref part="V17" gate="1" pin="V+"/>
-<pinref part="C301" gate="G$1" pin="2"/>
+<pinref part="C51" gate="G$1" pin="2"/>
 <wire x1="190.5" y1="236.22" x2="190.5" y2="238.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -1801,12 +1819,12 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <net name="0V" class="0">
 <segment>
 <pinref part="V14" gate="1" pin="0V"/>
-<pinref part="C301" gate="G$1" pin="1"/>
+<pinref part="C51" gate="G$1" pin="1"/>
 <wire x1="190.5" y1="226.06" x2="190.5" y2="228.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="V15" gate="1" pin="0V"/>
-<pinref part="C304" gate="G$1" pin="2"/>
+<pinref part="C52" gate="G$1" pin="2"/>
 <wire x1="213.36" y1="228.6" x2="213.36" y2="226.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -1866,6 +1884,22 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <junction x="172.72" y="50.8"/>
 <pinref part="GND1" gate="G$1" pin="TP"/>
 <pinref part="GND2" gate="G$1" pin="TP"/>
+</segment>
+<segment>
+<pinref part="GND4" gate="G$1" pin="TP"/>
+<pinref part="V11" gate="1" pin="0V"/>
+<wire x1="208.28" y1="93.98" x2="208.28" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="V10" gate="1" pin="0V"/>
+<pinref part="GND3" gate="G$1" pin="TP"/>
+<wire x1="175.26" y1="91.44" x2="175.26" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="V12" gate="1" pin="0V"/>
+<wire x1="353.06" y1="124.46" x2="353.06" y2="127" width="0.1524" layer="91"/>
+<pinref part="GND5" gate="G$1" pin="TP"/>
+<wire x1="353.06" y1="127" x2="350.52" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
